@@ -8,7 +8,7 @@ function BotsPage() {
   const [botsArmy, setBotsArmy] = useState([])
   //This fetches data from the server, which will be displayed onto the site from BotCollection component
   useEffect(() => {
-    fetch("http://localhost:8002/bots")
+    fetch("https://bot-battrl-code-challenge.onrender.com/bots")
     .then(response => response.json())
     .then(data => setBots(data))
   },[])
