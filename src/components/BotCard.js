@@ -27,7 +27,7 @@ function BotCard({ bot, onRemove, onDelete, onBotSelect }) {
 
 
   //This handles the delete functionality on the server once the 'x' button is clicked
-  function handleDeleteClick (botId) {
+  function handleDeleteClick () {
     fetch(`https://bot-battrl-code-challenge.onrender.com/bots/${bot.id}`, {
       method: "DELETE",
     })

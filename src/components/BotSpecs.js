@@ -11,7 +11,7 @@ const botTypeClasses = {
   Captain: "icon star",
 };
 
-function BotSpecs({ bot, botsArmy, setBotsArmy, onGoBack, onEnlist }) {
+function BotSpecs({ bot, onGoBack, onEnlist }) {
 
   const handleEnlistClick = () => {
     onEnlist(bot);
